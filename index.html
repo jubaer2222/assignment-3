@@ -28,25 +28,27 @@
 
 </head>
 <body class="font-sora">
-    <header>
-        <nav class="mt-12 mb-12  max-w-7xl mt-4  mx-4 lg:mx-auto">
+    <header class="min-h-screen w-full bg-[linear-gradient(180deg,_#FFFFFF,_#EFEBE3_100%)]">
+        <nav class=" mb-12  max-w-7xl mt-4  mx-4 lg:mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content text-[#111111] mt-3 z-[1] p-2 text-xl shadow bg-base-100 rounded-box w-52">
-                            <li>
-                                <a href="/">Product</a>
-                            </li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
+                    
 
-                    <img src="images/logo-header.png" alt="">
+                    <img class="border-2 border-dashed border-gray-400 lg:flex hidden" src="images/logo-header.png" alt="">
+                    <!-- small device svg -->
+                    <div class="lg:hidden flex">
+                        <svg width="48.082275" height="43.258461" viewBox="0 0 48.0823 43.2585" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                    Created with Pixso.
+                            </desc>
+                            <defs/>
+                            <path id="Vector" d="M44.94 13.9C44.74 13.5 44.24 13.4 43.84 13.6C41.64 15.1 36.14 16.79 36.14 16.79C16.54 21.8 24.84 43.1 24.84 43.1C34.34 43.9 43.34 41.9 47.04 31.8C49.84 23.8 46.24 16.2 44.94 13.9Z" fill="#638B3F" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            <path id="Vector" d="M24.74 43.1C24.74 42.1 28.24 28.8 40.34 22.4C40.34 22.4 29.14 32.4 24.74 43.1Z" fill="#82AF58" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            <path id="Vector" d="M8.04 0.3C8.44 -0.1 9.04 -0.1 9.44 0.3C11.84 2.8 18.24 6.7 18.24 6.7C41.44 18.79 24.74 43.2 24.74 43.2C12.44 41.5 1.74 36.3 0.14 22.4C-1.06 11.4 5.64 2.9 8.04 0.3Z" fill="#88C057" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            <path id="Vector" d="M24.84 43.1C25.14 41.8 24.64 24 11.34 12.4C11.24 12.3 22.44 28.3 24.84 43.1Z" fill="#638B3F" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        </svg>
+                        
+                    </div>
 
                 </div>
                 <div class="navbar-center  lg:flex hidden text-xl text-[#111111] items-center justify-center">
@@ -62,9 +64,9 @@
                 
 
 
-                <div class="navbar-end items-center  flex gap-5">
+                <div class="navbar-end items-center  flex gap-3">
 
-                  <div class="lg:flex justify-end text-xl text-gray-700 bg-slate-50 rounded-full p-2 hidden">
+                  <div class="lg:flex justify-end text-xl text-gray-700 bg-slate-50 rounded-full  hidden">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
 
@@ -72,17 +74,17 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                   </div>
                   <!-- three dot svg -->
-                  <div class="lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                  <div class="lg:hidden text-2xl">
+                    <i class="fa-solid fa-bars"></i>
                   </div>
 
-                    <div class="bg-[#179800] hover:bg-[#87df77] lg:px-5 px-2 py-2 hidden  rounded-lg lg:flex">
-                        <div class="flex lg:gap-3 gap-1 items-center justify-center">
-                         <p class="lg:font-extrabold text-white text-xl">Register</p>
+                 <button class="px-5 ml-2 text-xl py-2 hidden  rounded-lg lg:flex border border-[#179800]">
+                    Login
+                 </button>
+
+                    <div class="bg-[#179800] hover:bg-[#87df77] px-5  py-2 hidden  rounded-lg lg:flex">
+                        <div class="flex lg:gap-1 gap-1 items-center justify-center">
+                         <p class=" text-white text-xl">Register</p>
                       
                            
                         </div>
@@ -90,6 +92,60 @@
                 </div>
             </div>
         </nav>
+
+
+        <!-- BANNER SECTION -->
+         <section class="lg:mt-24 mt-10 justify-center items-center flex flex-col">
+            <div class="text-center mx-4">
+                <h2 class="lg:text-6xl text-3xl font-semibold lg:mb-8 mb-4">Freshness <span class="text-[#179800] ">You Can <br> 
+                    Count</span> On, Prices You’ll Love!</h2>
+
+                    <p class="text-[#111111] lg:text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <img class="border-2 border-dashed border-gray-300 mt-4 lg:mt-8" src="images/hero-vegetables.png" alt="">
+         </section>
     </header>
+
+    <main>
+        <!-- SERVICES SECTION -->
+        <section class="lg:mt-32 mt-12 max-w-7xl mx-4 lg:mx-auto">
+            <h2 class="text-4xl font-semibold text-[#179800] lg:mb-11 mb-8">Services</h2>
+            <div class="lg:flex gap-5  ">
+                <div class="bg-[#EFEBE3] flex items-center flex-col p-8 rounded-2xl">
+                    <div class="rounded-full p-5 bg-white ">
+                        <img class=" border-2 border-dashed border-gray-300" src="images/service.png" alt="">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h2 class="text-2xl font-semibold mb-3">24/7 Services </h2>
+                        <p class="text-[#111111] text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-[#EFEBE3] flex items-center flex-col p-8 rounded-2xl lg:mt-0 mt-4">
+                    <div class="rounded-full p-5 bg-white ">
+                        <img class=" border-2 border-dashed border-gray-300" src="images/service.png" alt="">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h2 class="text-2xl font-semibold mb-3">24/7 Services </h2>
+                        <p class="text-[#111111] text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+
+
+                <div class="bg-[#EFEBE3] flex items-center flex-col p-8 rounded-2xl lg:mt-0 mt-4">
+                    <div class="rounded-full p-5 bg-white ">
+                        <img class=" border-2 border-dashed border-gray-300" src="images/service.png" alt="">
+                    </div>
+                    <div class="text-center mt-6">
+                        <h2 class="text-2xl font-semibold mb-3">24/7 Services </h2>
+                        <p class="text-[#111111] text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>
