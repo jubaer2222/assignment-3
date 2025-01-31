@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+      <!-- TALWIND DAISY COMPONENT -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Font Sora -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<style>
+    .font-sora{
+        font-family: "Sora", serif;
+    }
+</style>
+
+    <!-- Font awesome cdn -->
+    <script src="https://kit.fontawesome.com/d4b071698b.js" crossorigin="anonymous"></script>
+
+
 </head>
-<body>
-    
+<body class="font-sora">
+    <header>
+        <nav class="mt-12 mb-12  max-w-7xl mt-4  mx-4 lg:mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content text-[#111111] mt-3 z-[1] p-2 text-xl shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <a href="/">Product</a>
+                            </li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <img src="images/logo-header.png" alt="">
+
+                </div>
+                <div class="navbar-center  lg:flex hidden text-xl text-[#111111] items-center justify-center">
+                    <ul class="menu menu-horizontal px-1 text-[#424247]">
+                        <li>
+                            <a href="/">Product</a>
+                        </li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                
+
+
+                <div class="navbar-end items-center  flex gap-5">
+
+                  <div class="lg:flex justify-end text-xl text-gray-700 bg-slate-50 rounded-full p-2 hidden">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+
+                  <div class="lg:flex justify-end text-xl text-gray-700 bg-slate-50 rounded-full p-2 hidden">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                  <!-- three dot svg -->
+                  <div class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                  </div>
+
+                    <div class="bg-[#179800] hover:bg-[#87df77] lg:px-5 px-2 py-2 hidden  rounded-lg lg:flex">
+                        <div class="flex lg:gap-3 gap-1 items-center justify-center">
+                         <p class="lg:font-extrabold text-white text-xl">Register</p>
+                      
+                           
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
